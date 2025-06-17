@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>꿈의 제인</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - 꿈의 제인</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="Janemain.jpg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"넌 영원히 사랑 받지 못할거야. <br> 왜냐면 넌 사랑 받고 싶어서 누군가를 사랑하거든."</div>
+      <div class="quote text-end">"방법을 모르겠어. 어떻게 해야 사람들이랑 같이 있을 수 있는지 방법을 모르겠어요"</div>
+      <div class="quote text-start">"우리 죽지말고 불행하게 오래오래 살아요. <br> 그리고 내년에도, 내후년에도, 또 만나요. 불행한 얼굴로. 여기 뉴월드에서"</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="Jane1.jpg" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>꿈의 제인</h2><br>
+          <h5>개봉: 2017.05.31</h5><br>
+          <h5>장르: 드라마&#47;한국</h5><br>
+          <h5>감독: 조현훈</h5><br>
+          <h5>출연: 이민지, 구교환, 이주영, 박강섭, 박경혜 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “불행한 인생 혼자 살아 뭐하니, 그래서 다 같이 사는 거야”
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            혼자 남겨지는 것이 두려운 소녀 ‘소현’은 어떻게든 사람들과 어울리기 위해 매일 안간힘을 쓴다.
+            하지만 그런 ‘소현’을 받아주는 것은 ‘정호’ 오빠뿐이다.
+            ‘정호’마저 소현을 떠나고 누구라도 자신을 찾아주길 바라던 어느 날,
+            꿈결처럼 미스터리한 여인 '제인'이 나타나고,
+            그날 이후 소현은 조금씩 ‘제인’과의 시시한 행복을 꿈꾸기 시작한다.
+          </p>
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            어디에도 받아들여지지 못한 소녀 '소현'과 
+            누구와도 함께하길 원하는 미스터리한 여인 '제인'의 특별한 만남을 그린 영화, '꿈의 제인' 
+          </p>
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            시간은 꿈처럼 어느 순간 눈을 뜨면 흘러가 있고 방향 없는 현실은 꿈처럼 희미해진다.
+            꿈과 현실 사이의 모호한 경계 속에서, 제인은 과연 실존하는 인물이었을까.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="jane.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>제인</h3>
+        <h5>갈 곳 없는 가출성소년들을 모아 팸을 만들어 대가없이 지내게 해주는 트랜스젠더 여성. 
+            방황하는 소현에게 처음으로 진정한 위로와 안식처를 내어준다. 
+            버려진 물건 수집하는 것과 종호와의 관계를 집착하는 성향이 있다.
+            종호와의 관계의 단절을 겪은 뒤, 결국 자신의 집 창문에 뛰어내려 죽음을 맞이하게 된다.</h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="jane2.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>소현</h3>
+        <h5>가족과 사회로부터 외면받아 외로운 삶을 살아가는 소녀.
+            제인을 만나 가출팸에 지내게 된다. 
+            제인을 가장 의지하고 자신의 삶의 롤모델로 삼으려 한다.
+            소현의 시선에서 전개되는 이야기는, 꿈과 현실인지 모호하다.
+            그래서 소현이 겪은 일들이 과연 실존하던 것인지 단순히 꿈을 꾼 것인지 분별이 되지 않는다. </h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="jane3.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>지수</h3>
+        <h5>제인 및 다른 가출팸에서 소현과 함께 의지하며 지내는 소녀.
+            동생과 함께 살기 위해 밤낮으로 일해 돈을 모은다.
+            순종적인 소현과 달리, 정의롭고 야심찬 인물이다. 
+            잠긴 방에서 가출팸의 다른 구성원들에게 심한 폭력을 당한 뒤, 탈출하기 위해 창문에서 뛰어내리다 죽음을 맞이하게 된다.
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="janeposter1.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="han-gong-ju.jpg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="We.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

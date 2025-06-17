@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Project</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - Call Me By Your Name</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="c1.jpg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"Call my by your name<br> and I'll call you by mine."</div>
+      <div class="quote text-end">"Elio. Elio, Elio, Elio, Elio, Elio..."<br> "Oliver. I remember everything"</div>
+      <div class="quote text-start">"Right now there's sorrow, pain. <br>Don't kill it with it the joy you've felt."</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="callme.jpg" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>Call Me By Your Name</h2><br>
+          <h5>개봉: 2018.03.22</h5><br>
+          <h5>장르: 드라마,멜로&#47;로맨스</h5><br>
+          <h5>감독: 루카 구아다니노</h5><br>
+          <h5>출연: 티모시 샬라메, 아미 해머 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “네 이름으로 날 불러줘<br>
+            내 이름으로 널 부를게"
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            1983년, 이탈리아 북부의 햇살 가득한 여름. 17살 소년 엘리오 펄먼은 고고학자인 아버지와 번역가 어머니와 함께 시골 저택에서 여름을 보내고 있다. 
+            해마다 초청하는 대학원생 손님으로, 미국인 올리버가 가족의 집에 머물게 된다.
+            근처에 사는 또래 친구들과 함께 여름 내내 자유롭고 활기차게 하루하루를 즐긴다.
+            처음엔 올리버의 자유분방한 태도에 거리감을 느끼던 엘리오는, 점차 그와 특별한 감정의 교류를 나누게 된다. 
+            두 사람 사이에는 미묘하면서도 강한 감정의 흐름이 생겨나고, 그 여름은 엘리오에게 감정적 성장과 정체성의 자각을 가져오는 특별한 시간이 된다.
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            Elio의 처음이자 Oliver의 전부가 된 그 해, 여름보다 뜨거웠던 사랑이 펼쳐진다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="c3.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>엘리오</h3>
+        <h5>17세의 감수성 예민한 소년으로, 음악과 문학, 언어에 재능이 있는 지적이고 내성적인 인물이다. 
+          여름 동안 부모님의 별장에서 지내며, 처음에는 낯설고 혼란스러웠던 감정을 통해 점차 올리버에게 끌리고 사랑을 자각하면서 성장해 나간다. 
+          그의 이야기는 첫사랑의 아름다움과 아픔을 통해 성숙해지는 과정을 섬세하게 그려낸다.</h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="c2.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>올리버</h3>
+        <h5>엘리오의 아버지를 도우러 미국에서 온 대학원생으로, 자신감 있고 외향적인 성격을 가졌지만 내면에는 복잡한 감정과 갈등을 지닌 인물이다.
+         엘리오와는 점차 강한 유대감을 형성하며 서로에게 특별한 존재가 되지만, 현실적인 제약과 두려움으로 인해 결국 그 사랑을 완전히 받아들이지 못한다.</h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="c4.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>마르치아</h3>
+        <h5>엘리오와 또래인 따뜻하고 순수한 소녀로, 엘리오에게 호감을 갖고 연인 관계를 형성하지만 그의 마음이 자신에게 완전히 향하지 않았다는 것을 느낀다. 
+          그녀는 이성적 연애의 상징이자 엘리오가 자신의 감정을 확인해가는 과정에서 중요한 인물로 등장한다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="c5.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="c6.jpg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="c8.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

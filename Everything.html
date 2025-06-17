@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Everywhere All At Once</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - Everything Everywhere All At Once</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="everything1.jpg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"내가 유일하게 아는 것은 우리 모두 다정해야 한다는 거야. <br> 다정함을 보여줘. 특히 뭐가 뭔지 혼란스러울땐"</div>
+      <div class="quote text-end">"우리는 우리가 원하는 것은 뭐든지 다 할 수 있어"</div>
+      <div class="quote text-start">"난 당신을 알아. 늘 뭔가 이룰 기회를 놓쳤을까 전전긍긍하지. <br> 이 말을 해주려고 온거야. 그 모든 거절과 실망이 당신을 여기로 이끌었어. <br> 바로 이 순간"</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="Everythingall.jpg" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>Everything Everywhere All At Once</h2><br>
+          <h5>개봉: 2022.10.12</h5><br>
+          <h5>장르: 액션&#47;미국</h5><br>
+          <h5>감독: 다니엘 콴, 다니엘 쉐이너트</h5><br>
+          <h5>출연: 양자경, 스테파니 수, 키 호이 콴 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “그래서 진실이 뭔데?”<br>
+            "모두 다 부질없다는 것"
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            미국에 이민 와 힘겹게 세탁소를 운영하던 에블린은 
+            세무당국의 조사에 시달리던 어느 날 남편의 이혼 요구와 삐딱하게 구는 딸로 인해 대혼란에 빠진다. 
+            그 순간 에블린은 멀티버스 안에서 수천, 수만의 자신이 세상을 살아가고 있다는 사실을 알게 되고, 
+            그 모든 능력을 빌려와 위기의 세상과 가족을 구해야 하는 운명에 처한다.
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            현실과 다른 세상의 딸은 허무주의에 빠져 세상을 모두 다 없애버리려는 계획을 세운다.
+            그런 딸과 세상을 지키기 위해 에블린은 현실에서는 자주 사용하지 않았던 '다정함'을 내세운다.
+            과연, 에블린은 가족과 세상을 지켜낼 수 있을까?
+          </p>
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            번아웃에 지쳐 무기력함에 빠진 날, 세상 모든 것이 다 부질없다고 생각되는 날,
+            뭔가 모를 답답함에 도망치고 싶던 날, 가족들에게 주고 싶지 않은 상처를 준 날.
+            운명처럼 이 영화가 당신에게 머물 것이다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="evlyn.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>에블린</h3>
+        <h5>에블린은 미국으로 이민 온 중국계 여성으로, 시애틀에서 세탁소를 운영하며 평범한 일상을 살아가는 인물이다.
+            그러나 세무조사, 남편과의 갈등, 딸과의 소통 부재 등으로 점차 지쳐간다. 그러던 중 멀티버스의 다른 차원에서 온 웨이먼드로부터 
+            '버스 점핑' 기술을 배우며 다양한 능력을 습득하고, 가족과 세상을 구하기 위한 여정에 나선다.</h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="dad.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>웨이먼드</h3>
+        <h5>낙천적이고 상냥한 성격의 인물로, 현실적이지 못한 모습이 에블린에게는 그저 철부지같다고 생각된다.
+           그러나 그는 다른 차원의 웨이먼드로부터 에블린이 멀티버스를 구할 유일한 존재라는 사실을 알게 되며, 
+           그녀를 돕기 위해 다양한 방법으로 지원하게 된다. </h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="joy.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>조이&#40;조이투부키&#41;</h3>
+        <h5>에블린과 웨이먼드의 딸로, 대학을 중퇴하고 커밍아웃을 하며 부모와의 관계가 점차 멀어지게 된다. 
+          그러나 다른 차원에서는 '조부 투파키'라는 이름으로 등장하며, 멀티버스를 위협하는 강력한 존재로 변하는 인물.
+          조부 투파키는 모든 가능성을 초월한 존재로, 아무것도 의미가 없다는 허무주의에 빠져 세상을 멸망시키고자 한다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="E1.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="E2.jpg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="E3.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

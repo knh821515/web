@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Project</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - Florida Project</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="f2.jpg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"저 무지개 끝에는 보물이 있대! </div>
+      <div class="quote text-end">"난 어른들이 울 것 같은 순간,"<br> 울기 직전일 때를 항상 알 수 있어.</div>
+      <div class="quote text-start">"내가 왜 이 나무를 좋아하는지 알아? <br> 비록 쓰러졌지만 여전히 계속 자라나고 있기 때문이야.</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="florida.jpg" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>Florida Project</h2><br>
+          <h5>개봉: 2018.03.07</h5><br>
+          <h5>장르: 드라마</h5><br>
+          <h5>감독: 션 베이커</h5><br>
+          <h5>출연: 윌램 대포, 브루클린 프린스, 브리아 비나이트 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “넌 내 단짝인데<br>
+            다신 못 볼지도 몰라"
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            플로리다 디즈니월드 근처의 값싼 모텔 ‘매직 캐슬’에는 관광객이 아닌 저소득층 주민들이 장기 투숙하며 살아간다.
+            이곳에서 6살 소녀 무니는 엄마 헤일리와 함께 살고 있다. 무니는 학교도 가지 않지만, 
+            근처에 사는 또래 친구들과 함께 여름 내내 자유롭고 활기차게 하루하루를 즐긴다.
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            하지만 아이들의 천진난만한 시선과는 달리, 모텔 바깥의 현실은 빈곤, 불안정한 생계, 사회적 단절로 가득하다.
+            헤일리는 직업도 없고, 위태로운 선택을 하며 딸과의 삶을 겨우 유지한다. 모텔 매니저 바비는 무니와 아이들을 보살피려 애쓴다.
+            영화는 무니가 일상의 위태로운 균형이 무너지는 과정을 밝고 생기 넘치는 시선으로 역설적으로 그리며, 
+            마지막에는 아이가 겪는 현실의 충격을 암시적인 결말로 마무리한다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="mooni.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>무니</h3>
+        <h5>모텔 옆의 가짜 디즈니랜드에 가고 싶어하는 똥꼬발랄한 어린소녀.
+            학교도 가지 않고 부모님과 지내는 시간이 많지 않지만, 같은 모텔 이웃의 아이들과 함께 어울려 지낸다.
+            엄마 헤일리의 월급날이면 엄마가 알바하는 팬케이크집에서 먹고 싶은 것을 마음껏 먹을 수 있기에 그 순간만을 손꼽아 기다리는 천진난만한 아이이다.</h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="umma.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>헤일리</h3>
+        <h5>무니의 엄마이다. 미혼모이며 무니와 함께 모텔에서 살아가고 있다.
+           친구와 클럽에 가기를 즐기며 돈이 없지만 누구보다 무니를 사랑한다. 
+           아이방임으로 무니를 잃을 위기에 처하기도 한다.</h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="azoxi.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>바비</h3>
+        <h5>핼리와 무니 모녀가 사는 모텔의 관리인이다. 무니를 진심어린 시선으로 주의깊게 보살피려 노력한다.
+          늘 핼리에게 잔소리를 하지만, 모녀가 곤경에 처할 때마다 든든하게 의지할 수 있는 조력자이다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="american.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="room.jpeg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="ladybird.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

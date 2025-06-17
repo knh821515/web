@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MVMM</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background-color: black;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .nav-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+    }
+
+    .language-btn {
+      border: 1px solid black;
+      background-color: transparent;
+      color: white;
+    }
+
+    .language-btn:hover {
+      border-color: #222;
+    }
+
+    .dropdown-menu {
+      background-color: #333;
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      background-color: #555;
+    }
+
+    .main-container {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 70px);
+    }
+
+    .poster {
+      border-radius: 10px;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Posters with relative units */
+    .poster-left {
+      position: absolute;
+      bottom: 4%;
+      left: 13vw;
+      width: 21vw;
+    }
+
+    .poster-top1 {
+      position: absolute;
+      top: 2%;
+      left: 35.5vw;
+      width: 15.5vw;
+    }
+
+    .poster-top2 {
+      position: absolute;
+      top: 2%;
+      left: 52vw;
+      width: 15.7vw;
+    }
+
+    .poster-top3 {
+      position: absolute;
+      top: 2%;
+      left: 68.6vw;
+      width: 16.18vw;
+    }
+
+    .poster-bottom1 {
+      position: absolute;
+      top: 55%;
+      left: 35.4vw;
+      width: 12.67vw;
+    }
+
+    .poster-bottom2 {
+      position: absolute;
+      top: 55%;
+      left: 49vw;
+      width: 13vw;
+    }
+
+    .fate-box {
+      position: absolute;
+      top: 55%;
+      left: 62.7vw;
+      width: 22vw;
+      height: 13vh;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      color: rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: clamp(1rem, 1.3vw, 1.3rem);
+      padding: 20px;
+    }
+
+    /* For medium screens */
+    @media (max-width: 1200px) {
+      .poster-left { width: 24vw; }
+      .poster-top1, .poster-top2, .poster-top3 { width: 17vw; }
+      .poster-bottom1, .poster-bottom2 { width: 14vw; }
+      .fate-box { width: 25vw; font-size: clamp(0.9rem, 1.1vw, 1.2rem); }
+    }
+
+    /* Mobile fallback */
+    @media (max-width: 768px) {
+      .main-container {
+        position: static;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+      }
+
+      .poster {
+        position: static !important;
+        width: 80% !important;
+        margin-bottom: 15px;
+      }
+
+      .fate-box {
+        position: static !important;
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+
+      .nav-center {
+        font-size: 1.2rem;
+        top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg position-relative">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">MVMM</a>
+      <div class="nav-center">My vibes, My movies</div>
+      <div class="dropdown ms-auto">
+        <button class="btn language-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Language
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Korean</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <img src="Jane1.jpg" class="poster poster-left" alt="poster1" onclick="location.href='Jane.html'"/>
+    <img src="Everythingall.jpg" class="poster poster-top1" alt="poster2" onclick="location.href='Everything.html'" />
+    <img src="happyend.jpg" class="poster poster-top2" alt="poster3" onclick="location.href='Happyend.html'" />
+    <img src="florida.jpg" class="poster poster-top3" alt="poster4" onclick="location.href='Florida.html'" />
+    <img src="callme.jpg" class="poster poster-bottom1" alt="poster5" onclick="location.href='Callme.html'"/>
+    <img src="monalisa.webp" class="poster poster-bottom2" alt="poster6" onclick="location.href='Monalisa.html'"/>
+    <div class="fate-box">
+      Finding your fate moment<br />In the movie
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

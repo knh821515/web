@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happyend</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - Happyend</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="happyend.jpeg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"내가 유타와 대학생 이후에 만났어도 친구 될 수 있었을까?"</div>
+      <div class="quote text-end">"넌 음악이 전부인 것 같지?"<br>
+      "그래, 나도 묻자"<br>
+      "길에서 소리 지른다고 세상이 변해?"</div>
+      <div class="quote text-start">"세상에서 가장 잘난 건 전자 계산기"</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="happyend.jpg" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>Happyend</h2><br>
+          <h5>개봉: 2025.04.30</h5><br>
+          <h5>장르: 드라마&#47;일본</h5><br>
+          <h5>감독: 네오 소라</h5><br>
+          <h5>출연: 쿠리하라 하야토, 히다카 유키토 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “무언가 크게 달라질 것 같은 예감이 들었다.”
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            점멸등이 일렁이는 근미래의 도쿄. 음악에 빠진 고등학생 ‘유타’와 재일교포 ‘코우’는 친구들과 함께 자유로운 나날을 보낸다. 
+            동아리방을 찾아 늦은 밤 학교에 잠입한 그들은 교장 ‘나가이’의 고급 차량에 발칙한 장난을 치고, 분노한 학교는 AI 감시 체제를 도입한다. 
+            그날 이후 그들을 둘러싼 모든 것이 조금씩 달라지기 시작한다.
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+               학교는 범인을 색출하려는 과정에서 학생들을 압박하고, 특히 코우는 출신 배경으로 인해 차별을 겪으며 점점 벼랑 끝으로 몰린다.
+               이 과정에서 두 친구는 자아와 정의, 저항의 의미를 깨닫고, 체제에 맞선 결단을 내리게 된다. 
+               영화는 청춘의 순수함과 사회의 부조리가 충돌하는 과정을 날카롭고 감성적으로 그려내며, 진정한 ‘해피엔드’란 무엇인지 질문을 던진다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="uta.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>유타</h3>
+        <h5>장난끼 많고 음악을 그 누구보다 사랑하는 인물이다. 코우, 아타, 밍, 톰과 함께 학교의 디제잉 동아리를 운영한다.
+            코우와는 유치원생 때부터 소꿉친구이지만, 점차 각자의 처지와 환경이 변화함에 따라 사이가 예전처럼 돈독하지 못하게 된다. 
+            하지만, 인물 중 가장 의리있고 우정을 지키려 자신을 희생하기도 한다.</h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="cou.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>코우</h3>
+        <h5>재일교포로 유타와 소꿉친구이다. 유타처럼 음악을 좋아하지만 순수 일본인이 아니라, 재일교포라는 이유로 
+           일본 사회의 차별을 받고 좋아하는 후미와 어울리려 함께 사회운동을 나가게 되면서 자신과 유타는 다른 존재라고 인식하게 된다. 
+           그래서 유타를 음악밖에 모르는 철부지라고 생각하게 되며 이 둘의 우정에 금이 가기 시작한다. </h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="humi.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>후미</h3>
+        <h5>그 누구보다 일본 사회 내의 부조리에 대해 저항하는 정의로운 인물이다. 학교 선생님과 함께 반사회운동 모임에 참여해 활동한다. 
+          코우의 짝사랑 대상이다. 일본 혼혈 학생들을 대상으로 행해진 차별에 대해 학교를 대상으로 데모를 일으킨다.
+          후미 또한 코우를 마음에 들어하는 눈치이다. 
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="end1.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="end2.jpg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="end3.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

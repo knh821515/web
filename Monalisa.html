@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Project</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Gowun Dodum', sans-serif;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6, p, div, span, a, nav, button, .navbar-brand, .nav-link {
+      font-family: 'Gowun Dodum', sans-serif !important;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin-bottom: 18%;
+    }
+    .poster-rounded {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: auto; 
+    }
+    .gray-box {
+      background-color: #444444;
+      border-radius: 10px;
+    }
+    .summary-box {
+      padding: 50px;
+      color: white;
+      height: 100%;
+    }
+    .director-box {
+      height: 100%;
+    }
+    .character-box {
+      background-color: #444444;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .character-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .character-box.reverse {
+      flex-direction: row-reverse;
+    }
+    .character-box.reverse .character-img {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .recommendation-img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    .section-title {
+      margin-top: 80px;
+    }
+    .container.shrink {
+      max-width: 900px;
+    }
+    .poster-rounded.shrink-img {
+      max-height: 400px;
+    }
+    .recommendation-spacing {
+      margin-top: 150px;
+    }
+    .custom-space {
+      margin-top: 150px;
+    }
+    .full-height {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .text-center{
+        margin-top: 40%;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">MVMM - Mona Lisa And Blood Moon</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#summary-section">줄거리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#characters">등장인물</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">이 영화와 비슷한 추천영화</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Image -->
+  <div>
+    <img src="m1.jpg" alt="Main Image" class="main-image">
+  </div>
+
+  <!-- Quotes -->
+  <div class="container px-5 my-5">
+    <div class="d-flex flex-column gap-4">
+      <div class="quote text-start">"사람들이 좋은데 왜 그런지 모르겠다고? <br> 아마 사실은 그렇게 좋아하지 않는 걸 수도 있어. 사람은 그렇게 쉽게 좋아할 수 있는 존재가 아니니까."</div>
+      <div class="quote text-end">"네가 알고 있던 건 잊어버려."</div>
+      <div class="quote text-start">"뭐야, 그거 어떻게 했어." <br>"모르지, 난들 알겠냐?"</div>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div id="summary-section" class="container px-5 my-5 shrink">
+    <div class="mb-4">
+      <h3 class="text-center">줄거리</h3>
+    </div>
+    <div class="row g-4 mb-5 align-items-stretch">
+      <div class="col-md-4 d-flex flex-column">
+        <img src="monalisa.webp" alt="Poster" class="poster-rounded mb-3 shrink-img">
+        <div class="gray-box director-box p-3 full-height">
+          <h2>모나리자와 <br> 블러드문</h2><br>
+          <h5>개봉: 2023.03.22</h5><br>
+          <h5>장르: 판타지&#47;미국</h5><br>
+          <h5>감독: 애나 릴리 아미푸르</h5><br>
+          <h5>출연: 전종서, 케이트 허드슨, 에드 스크레인 등</h5>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex flex-column">
+        <div class="gray-box summary-box full-height">
+          <h2 style="font-weight: bold; font-size: 2.2rem; margin-bottom: 40px;">
+            “네가 알고 있었던 건 <br>이제 잊어버려"
+          </h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            모나 리사는 뉴올리언스 근교의 정신병원에 10년간 갇혀 생활하고 있었다. 어느 날, 그녀는 초능력(텔레키네시스)을 사용해 병원을 탈출하게 된다. 
+            도시의 밤거리를 떠도는 그녀는 보니 벨이라는 스트립 클럽에서 일하는 싱글맘과 만나게 된다.
+            보니는 모나의 능력을 알아보고, 이를 이용해 빠르게 돈을 벌 기회를 찾는다. 
+            두 사람은 함께 ATM 강도, 클럽 손님들의 팁을 조종하는 등 범죄를 저지르며 생활을 유지하게 된다.
+          <br>
+          <p style="font-size: 1.1rem; line-height: 1.8; text-align: justify;">
+            그러나 모나의 능력은 점점 더 위험한 상황을 초래하고, 경찰 해롤드의 추적하기 시작한다.
+            보니는 모나의 능력을 이용하려 하지만, 모나는 점차 보니의 진심을 알아차리고 관계에 균열이 생긴다.
+            결국, 모나는 보니의 아들 찰리와 함께 도망을 결심하게 된다.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <div id="characters" class="container px-5 my-5">
+    <div class="mb-5">
+      <h5 class="text-center section-title">등장인물</h5>
+    </div>
+    <div class="character-box">
+      <img src="m2.jpg" alt="Character 1" class="character-img">
+      <div>
+        <h3>모나 리사</h3>
+        <h5>10년간 정신병원에 갇혀 있던 초능력자 여성으로, 눈을 보며'지금 네가 알고 있던 걸 잊어버려."라고 말하면서 사람들의 기억을 
+          지우는 신비로운 능력을 가지고 있다. 내성적이고 감정을 잘 드러내지 않지만, 자유를 갈망하며 세상과 단절된 상태에서 자신만의 
+          방식으로 삶을 개척하는 인물이다. </h5>
+      </div>
+    </div>
+    <div class="character-box reverse">
+      <img src="m3.jpg" alt="Character 2" class="character-img">
+      <div>
+        <h3>팔로마</h3>
+        <h5>뉴올리언스의 거리에서 활동하는 약간 괴짜 같은 히피풍의 마약상/파티광으로, 보니 벨 주변 인물 중 하나이다.
+           그는 유쾌하고 자유분방하지만, 이야기가 진행되면서 점점 더 위험하고 이기적인 면모를 드러낸다. 포스터의 모나의 머리카락을
+          직접 잘라주는 모습도 볼 수 있다.</h5>
+      </div>
+    </div>
+    <div class="character-box">
+      <img src="m4.jpg" alt="Character 3" class="character-img">
+      <div>
+        <h3>보니 벨</h3>
+        <h5>뉴올리언스의 스트립 클럽에서 일하는 싱글맘으로, 병원에서 도망쳐 엉망진창의 모습을 한 모나를 씻기고, 먹이며 집을 내주었다.
+          그러나 모나가 초능력이 있다는 사실을 알고서는 밥값을 해야한다며 모나의 초능력을 이용해 돈을 훔치려는 계획을 행한다.
+           도중에 모나가 이를 눈치채고 도망가기 전까지 말이다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom space after Characters -->
+  <div class="custom-space"></div>
+
+  <!-- Recommendations Section -->
+  <div id="recommendations" class="container px-5 my-5 recommendation-spacing">
+    <div class="mb-5">
+      <h5 class="text-center">이 영화와 비슷한 추천영화</h5>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="m5.jpg" alt="Recommendation 1" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="m6.jpg" alt="Recommendation 2" class="recommendation-img">
+      </div>
+      <div class="col-md-4">
+        <img src="m7.jpg" alt="Recommendation 3" class="recommendation-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
